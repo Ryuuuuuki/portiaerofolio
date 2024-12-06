@@ -1,0 +1,414 @@
+body{
+    background-image: url('img/Fotoram.io.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed; 
+    z-index: 1000;   
+}
+/* barra de navegação */
+.nav {
+    display: flex; 
+    gap: 20px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.10); /* fundin transparente pra da aquele degrade */
+    width: 100%;
+}
+
+.nav a {
+    /* cor dos icones */
+    color: rgb(255, 255, 255);
+    /* remove o ngc de sublinhar do link */
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    /* deixa os carai dos icone certo com o texto */
+    align-items: center;
+}
+
+.nav a i {
+    /* distancia dos icones para o texto */
+    margin-right: 5px;
+}
+
+.nav a:hover {
+    /* corzinha qndo passa o mouse no link hihi */
+    color: #f39c12; 
+}
+
+/* index css */
+
+.home-content {
+    left: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 2.5em;
+    color: #0800ff
+}
+
+.home-content h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.home-content p {
+    max-width: 600px;
+    font-size: 1.2em;
+    /* degradezin de cor pa dexa bonito */
+    color: #9b9b9b; 
+}
+
+.home-image{
+    position: absolute;
+    left: 160px;
+    top: 120px;
+}
+.home-image img {
+    width: 100px;
+    height: auto;
+}
+
+.social-media {
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 2em;
+    color: white;
+}
+
+.social-media a:hover {
+    /* a mesma coisa que o de cima soq com os icone d baxo */
+    color: #f39c12;
+}
+
+/* portifolio content */
+
+.portifolio-content{
+    left: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+.portifolio-content h1 {
+    position: relative;
+    font-size: 2.5em;
+    color: #ffff0099
+}
+
+.portifolio-content h3 {
+    background-color: #161616db;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.portifolio-content p {
+    background-color:#161616a5;
+    font-size: 1.0em;
+    
+    color: #9b9b9b;
+}
+.portifolio-content del {
+    position: absolute;
+    left: 400px;
+    font-size: 0.5em;
+    color: rgb(255, 255, 255);
+}
+.portifolio-content img{
+    position: relative;
+    left: 400px;;
+}
+
+/* Formação content */
+
+@keyframes bbbColor {
+    0% {
+        color: rgba(0, 242, 255, 0);
+    }
+    5% {
+        color: rgba(0, 242, 255, 0.1);
+    }
+    10% {
+        color: rgba(0, 242, 255, 0.2);
+    }
+    15% {
+        color: rgba(0, 242, 255, 0.3);
+    }
+    20% {
+        color: rgba(0, 242, 255, 0.4);
+    }
+    25% {
+        color: rgba(0, 242, 255, 0.5);
+    }
+    30% {
+        color: rgba(0, 242, 255, 0.6);
+    }
+    35% {
+        color: rgba(0, 242, 255, 0.7);
+    }
+    40% {
+        color: rgba(0, 242, 255, 0.8);
+    }
+    45% {
+        color: rgba(0, 242, 255, 0.9);
+    }
+    50% {
+        color: rgb(0, 242, 255, 1.0);
+    }
+    55% {
+        color: rgba(0, 242, 255, 0.9);
+    }
+    60% {
+        color: rgba(0, 242, 255, 0.8);
+    }
+    65% {
+        color: rgba(0, 242, 255, 0.7);
+    }
+    70% {
+        color: rgba(0, 242, 255, 0.6);
+    }
+    75% {
+        color: rgba(0, 242, 255, 0.5);
+    }
+    80% {
+        color: rgba(0, 242, 255, 0.4);
+    }
+    85% {
+        color: rgba(0, 242, 255, 0.3);
+    }
+    90% {
+        color: rgba(0, 242, 255, 0.2);
+    }
+    95% {
+        color: rgba(0, 242, 255, 0.1);
+    }
+    100% {
+        color: rgba(0, 242, 255, 0);
+    }
+}
+
+@keyframes rrrColor {
+    0% {
+        color: rgba(217, 0, 255, 0);
+    }
+    5% {
+        color: rgba(217, 0, 255, 0.1);
+    }
+    10% {
+        color: rgba(217, 0, 255, 0.2);
+    }
+    15% {
+        color: rgba(217, 0, 255, 0.3);
+    }
+    20% {
+        color: rgba(217, 0, 255, 0.4);
+    }
+    25% {
+        color: rgba(217, 0, 255, 0.5);
+    }
+    30% {
+        color: rgba(217, 0, 255, 0.6);
+    }
+    35% {
+        color: rgba(217, 0, 255, 0.7);
+    }
+    40% {
+        color: rgba(217, 0, 255, 0.8);
+    }
+    45% {
+        color: rgba(217, 0, 255, 0.9);
+    }
+    50% {
+        color: rgb(217, 0, 255); /* Cor roxa no meio */
+    }
+    55% {
+        color: rgba(217, 0, 255, 0.9);
+    }
+    60% {
+        color: rgba(217, 0, 255, 0.8);
+    }
+    65% {
+        color: rgba(217, 0, 255, 0.7);
+    }
+    70% {
+        color: rgba(217, 0, 255, 0.6);
+    }
+    75% {
+        color: rgba(217, 0, 255, 0.5);
+    }
+    80% {
+        color: rgba(217, 0, 255, 0.4);
+    }
+    85% {
+        color: rgba(217, 0, 255, 0.3);
+    }
+    90% {
+        color: rgba(217, 0, 255, 0.2);
+    }
+    95% {
+        color: rgba(217, 0, 255, 0.1);
+    }
+    100% {
+        color: rgba(217, 0, 255, 0);
+    }
+}
+
+
+
+.alura {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 2em;
+    text-align: center;
+    animation: bbbColor 2.5s infinite;
+}
+
+.formacao-content-alura {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+    gap: 10px; 
+    margin-top: 10px;
+    border: 1px solid #f39c12;
+}
+
+.formacao-content-alura img {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.formacao-content-udemy img {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.udemy {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+    animation: rrrColor 2.5s infinite;
+}
+
+.formacao-content-udemy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+    gap: 10px; 
+    margin-top: 10px;
+    border: 1px solid #f39c12;
+}
+
+/* about-content */
+
+.about-content {
+    left: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+.about-content h1 {
+    position: relative;
+    font-size: 2.5em;
+    color: #ffff0099;
+}
+
+.about-content h2 {
+    background-color: #161616db;
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.about-content h3 {
+    background-color: #161616db;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    background-color: #161616a5;
+    font-size: 1.0em;
+    color: #9b9b9b;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.about-content del {
+    /* position: absolute; */
+    left: 400px;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+}
+
+/* content-contato */
+
+.content-contato {
+    left: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+.content-contato h1 {
+    font-size: 2.5em;
+    color: #ffff0099;
+    margin-bottom: 20px;
+}
+
+.content-contato h2 {
+    font-size: 1.5em;
+    color: #f39c12;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.content-contato p {
+    font-size: 1em;
+    color: #9b9b9b;
+    background-color: #161616a5;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.content-social-media{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.content-social-media a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.content-social-media a:hover {
+    color: #f39c12;
+}
